@@ -1,17 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+var React = require('react');
+var ReactDOM = require("react-dom");
+//import React from 'react';
+//import ReactDOM from 'react-Dom';
 
+const fname="Deepali";
+const lname="Sharma";
+const curdate=new Date().toLocaleDateString();
+
+const curtime=new Date().toLocaleTimeString();
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <div>
+<h1>netflix top channels</h1>
+<p>here is our top channels  </p>
+<ol>
+  <li> dark</li>
+  <li> extra curricular</li>
+  <li> my people</li>
+  <li>first-2 </li>
+  <li> Mr -Robot </li>
+</ol>
+<h1> Hello my name is {`${fname}  ${lname}`}</h1>
+<h1> And my age is {18/4} </h1>
+<h2> Think Differently {Math.random()} </h2>
+<h2> todays current date is ={curdate}</h2>
+  <h2> todays current Time is ={curtime}</h2>
+</div>
+, document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
