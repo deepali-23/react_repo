@@ -6,10 +6,11 @@ var ReactDOM = require("react-dom");
 const fname="Deepali";
 const lname="Sharma";
 const curdate=new Date().toLocaleDateString();
+const image="https://picsum.photos/id/1/200/300";
 
 const curtime=new Date().toLocaleTimeString();
 ReactDOM.render(
-  <div>
+<div>
 <h1>netflix top channels</h1>
 <p>here is our top channels  </p>
 <ol>
@@ -24,7 +25,9 @@ ReactDOM.render(
 <h2> Think Differently {Math.random()} </h2>
 <h2> todays current date is ={curdate}</h2>
   <h2> todays current Time is ={curtime}</h2>
-  <h3> git commit changes</h3>
+<h3 contenteditable ="true">Now this text became editable.....</h3>
+<img scr= "image" alt="random Images"/>
 </div>
 , document.getElementById("root")
 );
+
