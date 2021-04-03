@@ -24,6 +24,7 @@ ReactDOM.render(
 <h2> Think Differently {Math.random()} </h2>
 <h2> todays current date is ={curdate}</h2>
   <h2> todays current Time is ={curtime}</h2>
+  <h3> git commit changes</h3>
 </div>
 , document.getElementById("root")
 );
